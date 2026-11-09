@@ -7,8 +7,9 @@ require __DIR__ . '/includes/header.php';
 ?>
 
 <section class="hero">
-    <div class="hero__art" aria-hidden="false"><?= svg_hero() ?></div>
-    <?= svg_leaf_branch('hero__leaves') ?>
+    <div class="hero__art" aria-hidden="true">
+        <img class="hero__img" src="assets/img/hero-home.jpg" width="1170" height="585" alt="" fetchpriority="high">
+    </div>
     <div class="container hero__inner">
         <div class="hero__content">
             <div class="eyebrow-rule" aria-hidden="true"><span></span><?= svg_sunburst() ?><span></span></div>
@@ -38,7 +39,9 @@ require __DIR__ . '/includes/header.php';
 </section>
 
 <section class="feature">
-    <div class="feature__art reveal"><?= svg_landscape() ?></div>
+    <div class="feature__art reveal">
+        <img class="feature__img" src="assets/img/home-together.jpg" width="1170" height="585" alt="Volunteers planting a tree, handing a care package to an older woman, and walking with a child beside a lake at sunrise" loading="lazy" decoding="async">
+    </div>
     <div class="feature__content reveal">
         <h2 class="feature__title"><em>Meaningful change,<br>built together.</em></h2>
         <p>Through people, communities, and collective action, we create lasting and inclusive change.</p>

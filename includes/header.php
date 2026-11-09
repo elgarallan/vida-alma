@@ -17,7 +17,10 @@ $description = $pageDescription ?? 'Vida Alma is a foundation turning compassion
     <meta property="og:title" content="<?= e($fullTitle) ?>">
     <meta property="og:description" content="<?= e($description) ?>">
     <script>document.documentElement.classList.add('js');</script>
-    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="assets/img/icon-512.png" type="image/png" sizes="512x512">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <meta property="og:image" content="<?= e(SITE_URL) ?>/assets/img/logo-full.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">

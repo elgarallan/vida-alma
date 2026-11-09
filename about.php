@@ -56,19 +56,33 @@ include __DIR__ . '/includes/page-hero.php';
     </div>
 </section>
 
-<section class="section section--tint" aria-labelledby="team-title">
+<section class="section section--tint team-section" aria-labelledby="team-title">
     <div class="container">
         <h2 id="team-title" class="section__title section__title--center">The people behind Vida Alma</h2>
         <p class="section__intro">A small staff team, supported by a board of community members and volunteers.</p>
-        <ul class="team">
-            <?php foreach (array_merge($TEAM, $COMMITTEE) as $member): ?>
-                <li class="team__member reveal">
-                    <?= svg_avatar($member['tone']) ?>
-                    <h3 class="team__name"><?= e($member['name']) ?></h3>
-                    <p class="team__role"><?= e($member['role']) ?></p>
-                </li>
+        <div class="org">
+            <div class="org__founder reveal">
+                <?= svg_avatar($FOUNDER['tone']) ?>
+                <h3 class="org__founder-name"><?= e($FOUNDER['name']) ?></h3>
+                <p class="org__badge"><?= e($FOUNDER['role']) ?></p>
+            </div>
+
+            <?php foreach ([['Committee Heads', $COMMITTEE_HEADS, 'heads'], ['Committee Managers', $COMMITTEE_MANAGERS, 'managers']] as [$label, $members, $mod]): ?>
+                <span class="org__stem" aria-hidden="true"></span>
+                <div class="org__level">
+                    <h3 class="org__label"><?= e($label) ?></h3>
+                    <ul class="org__row org__row--<?= e($mod) ?>">
+                        <?php foreach ($members as $member): ?>
+                            <li class="org__member reveal">
+                                <?= svg_avatar($member['tone']) ?>
+                                <h4 class="org__name"><?= e($member['name']) ?></h4>
+                                <p class="org__role"><?= e($member['role']) ?></p>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
             <?php endforeach; ?>
-        </ul>
+        </div>
     </div>
 </section>
 

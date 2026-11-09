@@ -4,6 +4,8 @@
  */
 
 const SITE_NAME    = 'Vida Alma';
+// Live web address, no trailing slash. Used for link previews on social media.
+const SITE_URL     = 'https://vidaalma.org';
 const SITE_TAGLINE = 'The soul of every action.';
 const SITE_EMAIL   = 'vidaalmaorganization@gmail.com';
 // Leave phone or address empty ('') to hide them on the site.

@@ -286,33 +286,10 @@ function icon(string $name, string $class = ''): string
     return '<svg class="icon icon--' . e($name) . ' ' . e($class) . '" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">' . $inner . '</svg>';
 }
 
-/** Round logo badge: sun, hills and two people. */
+/** Logo mark: the foundation's official emblem (sun over hills, people helping each other up). */
 function svg_logo(): string
 {
-    $p = PALETTE;
-    $rays = sun_rays(40, 34, 9, 7, 200, 340, $p['ray'], 8, 5);
-    return <<<SVG
-<svg class="logo-mark" viewBox="0 0 80 64" aria-hidden="true" focusable="false">
-  <defs><clipPath id="logo-clip"><ellipse cx="40" cy="38" rx="38" ry="25"/></clipPath></defs>
-  <g clip-path="url(#logo-clip)">
-    <rect width="80" height="64" fill="#FBEBD3"/>
-    {$rays}
-    <circle cx="40" cy="34" r="9" fill="{$p['sun']}"/>
-    <path d="M0 40 C12 30 22 28 34 36 L0 44Z" fill="{$p['blueMid']}"/>
-    <path d="M30 38 C44 28 58 28 80 36 V44 H30Z" fill="{$p['pink']}"/>
-    <rect y="40" width="80" height="8" fill="{$p['lake']}"/>
-    <path d="M0 64 V50 C20 44 40 46 56 52 C64 56 70 60 74 64Z" fill="{$p['orange']}"/>
-    <path d="M30 64 C42 52 60 46 80 44 V64Z" fill="{$p['olive']}"/>
-    <path d="M30 64 C40 56 50 50 60 44 L64 45 C56 52 48 58 42 64Z" fill="{$p['road']}"/>
-    <g stroke-linecap="round" fill="none">
-      <path d="M44 56 L48 48 L52 46" stroke="#2F6F98" stroke-width="3"/>
-      <path d="M54 48 L56 40 L52 46" stroke="#E57C34" stroke-width="3"/>
-    </g>
-    <circle cx="49" cy="45" r="1.8" fill="#C98A5E"/>
-    <circle cx="57" cy="37.5" r="1.8" fill="#C98A5E"/>
-  </g>
-</svg>
-SVG;
+    return '<img class="logo-mark" src="assets/img/logo-mark.png" width="480" height="391" alt="" decoding="async">';
 }
 
 /** Faded QR-style pattern used until the real donation QR code is added. Not scannable. */

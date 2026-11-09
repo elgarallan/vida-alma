@@ -75,22 +75,26 @@ $VALUES = [
     ['title' => 'Stay open', 'text' => 'We share where our money goes and what we learn, including what didn\'t work.'],
 ];
 
-$TEAM = [
-    ['name' => 'Calista Quisumbing',   'role' => 'Founder & Director', 'tone' => 'terracotta'],
-    ['name' => 'Ariz Dela Rosa',  'role' => 'Logistics',      'tone' => 'olive'],
-    ['name' => 'Ara Apato',     'role' => 'Research', 'tone' => 'teal'],
-    ['name' => 'Erin Kawpeng',   'role' => 'Creatives',  'tone' => 'sun'],
-    ['name' => 'Tati Mengullo',  'role' => 'Marketing',  'tone' => 'teal'],
-    ['name' => 'Anant Sharma',   'role' => 'Public Relations', 'tone' => 'terracotta'],
-    ['name' => 'Ryo Araki',      'role' => 'Operations', 'tone' => 'sun'],
-    ['name' => 'James Vinoya',   'role' => 'Finance',    'tone' => 'olive'],
+// About page org chart: founder, then committee heads, then committee managers.
+// tone sets the shirt colour on the placeholder portrait: terracotta, olive, teal or sun.
+$FOUNDER = ['name' => 'Calista Quisumbing', 'role' => 'Founder & Director', 'tone' => 'terracotta'];
+
+$COMMITTEE_HEADS = [
+    ['name' => 'Ariz Dela Rosa',  'role' => 'Logistics',        'tone' => 'olive'],
+    ['name' => 'Ara Repato',      'role' => 'Research',         'tone' => 'teal'],
+    ['name' => 'Erin Kawpeng',    'role' => 'Creatives',        'tone' => 'sun'],
+    ['name' => 'Tati Mengullo',   'role' => 'Marketing',        'tone' => 'teal'],
+    ['name' => 'Anant Sharma',    'role' => 'Public Relations', 'tone' => 'terracotta'],
+    ['name' => 'Ryo Araki',       'role' => 'Operations',       'tone' => 'sun'],
+    ['name' => 'Matthew Gabriel', 'role' => 'Social Media',     'tone' => 'olive'],
 ];
 
-$COMMITTEE = [
-    ['name' => 'Antonio Cornejo', 'role' => 'Logistics Manager',  'tone' => 'olive'],
-    ['name' => 'Aica Lagamia',    'role' => 'Creatives Manager',  'tone' => 'sun'],
-    ['name' => 'Xavi Kwok',       'role' => 'Marketing Manager',  'tone' => 'teal'],
-    ['name' => 'Marga Vedar',     'role' => 'Operations Manager', 'tone' => 'terracotta'],
+$COMMITTEE_MANAGERS = [
+    ['name' => 'Antonio Cornejo',    'role' => 'Logistics Manager',    'tone' => 'olive'],
+    ['name' => 'Aica Lagamia',       'role' => 'Creatives Manager',    'tone' => 'sun'],
+    ['name' => 'Xavi Kwok',          'role' => 'Marketing Manager',    'tone' => 'teal'],
+    ['name' => 'Marga Vedar',        'role' => 'Operations Manager',   'tone' => 'terracotta'],
+    ['name' => 'Zachary Cabognason', 'role' => 'Social Media Manager', 'tone' => 'olive'],
 ];
 
 // News stories for the Updates page. Empty until the first update is published.
